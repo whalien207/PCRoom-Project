@@ -69,19 +69,15 @@ public class LogIn extends JFrame {
 					if(member.getId().equals(login_id) && member.getPw().equals(login_pw)) {
 						JOptionPane.showMessageDialog(null, "회원입니다.");
 						//회원 가격 페이지로 이동
-						//new MembersPrice();
+						new Price(Main.memberPrice);
 						setVisible(false);
 					} else {
 						JOptionPane.showMessageDialog(null, "정보가 없습니다. 비회원입니다.");
 						//비회원 가격 페이지로 이동
-						//new NonMembersPrice();
+						new Price(Main.nonMemberPrice);
 						setVisible(false);
 					}
 				}
-				
-				//초기화면으로 돌아가기.
-				new Frame();
-                setVisible(false);
 			}
 		});
         

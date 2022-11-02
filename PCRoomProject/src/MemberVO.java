@@ -55,17 +55,4 @@ public class MemberVO {
 		return "MemberVO [id=" + id + ", pw=" + pw + ", name=" + name + ", phone=" + phone + "]";
 	}
 	
-	//@Override
-	/*
-    public boolean equals(Object object) {
-		MemberVO member = (MemberVO) object;
- 
-        //id만 같으면 true를 리턴합니다.
-        if (member.id == this.id) {
-            return true;
-        }
-        return false;
-    }
-    */
-	
 }

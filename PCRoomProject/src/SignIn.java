@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -87,7 +86,6 @@ public class SignIn extends JFrame{
 				//2. memberVO객체 생성.
 				MemberVO newMember = new MemberVO(newId, newPw, newName, newPhone);
 				Main.m.addMemberList(newMember);
-				//JOptionPane.showMessageDialog(null, Main.m.toString());
 				
 				JOptionPane.showMessageDialog(null, "가입이 완료되었습니다.");
 				
@@ -99,11 +97,5 @@ public class SignIn extends JFrame{
 		
 		setVisible(true);
 	}
-	
-	public void addMember(MemberVO newMember) {
-		MemberList memberList = new MemberList(newMember);
-		memberList.addMemberList(newMember);
-	}
-	
 	
 }
