@@ -19,10 +19,14 @@ public class Frame extends JFrame{
 		//버튼만들기
 		JButton signin = new JButton("회원가입");
 		JButton login = new JButton("로그인");
+		JButton store = new JButton("매점");
+		
 		//버튼 화면에 추가
 		this.add(signin);
 		this.add(login);
+		this.add(store);
 		
+		//회원가입 버튼 클릭시 이벤트 동작
 		signin.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -31,20 +35,20 @@ public class Frame extends JFrame{
 			}
 		});
 		
+		//로그인 버튼 클릭시 이벤트 동작
 		login.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new SignIn();
+				new LogIn();
                 setVisible(false);
-				String tID = "wusemr";
-				String tPW = "0000";
-				/*
-				if(tID.equals(id.getText()) && tPW.equals(pw.getText())) {
-					JOptionPane.showMessageDialog(null, "Login Success.");
-				} else {
-					JOptionPane.showMessageDialog(null, "Login Failure.");
-				}
-				*/
+			}
+		});
+		
+		store.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new menu();
+                setVisible(false);
 			}
 		});
 		
