@@ -7,6 +7,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+/*
+ * 회원가입 페이지
+ * 입력한 정보들을 ArrayList로 관리하도록 하였다.
+ * 추후 개선사항 : json파일로 변경해도 좋을듯.
+ */
+
 public class SignIn extends JFrame{
 	
 	public SignIn() {

@@ -8,6 +8,13 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+/*
+ * 로그인 페이지
+ * Main에서 회원버튼 클릭시 로그인 페이지로 이동.
+ * 로그인 성공시 회원 가격 페이지로 이동.
+ * 로그인 실패시 비회원 가격 페이지로 이동.
+ */
+
 public class LogIn extends JFrame {
 	
 	public LogIn() {
@@ -19,6 +26,7 @@ public class LogIn extends JFrame {
         setTitle("회원가입");
         //화면 사이즈 고정
         setLayout(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         /* 아이디 */
         JLabel label = new JLabel("아이디 : ");
