@@ -32,7 +32,7 @@ public class Bap {
 		//밥 메뉴 배열
 		String menu[] = { "참치김치", "스팸김치", "치킨마요", "스팸마요", "새우볶음", "알밥냠냠" };
 		//밥 가격 배열
-		int price[] = { 5000, 5500, 6000, 6500, 7000, 7500 };
+		int price[] = { 3500, 4000, 4500, 5500, 6000, 6500 };
 		JButton bt[] = new JButton[menu.length];
 		//수량버튼
 		JTextField suja[] = new JTextField[menu.length];
