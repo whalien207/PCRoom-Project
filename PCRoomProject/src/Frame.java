@@ -1,9 +1,20 @@
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+/*
+ * Main화면(초기화면)
+ * 1. 회원가입
+ * 2. 회원과 비회원
+ * 3. 매점
+ * 3가지 버튼이 있다.
+ */
 
 public class Frame extends JFrame{
 
@@ -14,12 +25,18 @@ public class Frame extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("PC POP");
 		setLayout(new FlowLayout()); //배치 관리자 설정
+		
+		JPanel panel = new JPanel();
+		BorderLayout border = new BorderLayout();
+		panel.setLayout(border);
 
 		//버튼만들기
 		JButton signin = new JButton("회원가입");
 		JButton login = new JButton("회원");
 		JButton nonMember = new JButton("비회원");
 		JButton store = new JButton("매점");
+		
+		//signin.setPreferredSize(new Dimension(100,30));
 
 		//버튼 화면에 추가
 		this.add(signin);
