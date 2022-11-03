@@ -75,7 +75,7 @@ public class Frame extends JFrame{
 		store.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//new menu();
+				new menu();
 				setVisible(false);
 			}
 		});
