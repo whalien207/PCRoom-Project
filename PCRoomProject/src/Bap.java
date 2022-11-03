@@ -30,7 +30,7 @@ public class Bap {
 		
 // 배열(메뉴, 가격)
 		//밥 메뉴 배열
-		String menu[] = { "참치김치", "스팸김치", "치킨마요", "스팸마요", "새우볶음밥", "알밥" };
+		String menu[] = { "참치김치", "스팸김치", "치킨마요", "스팸마요", "새우볶음", "알밥냠냠" };
 		//밥 가격 배열
 		int price[] = { 5000, 5500, 6000, 6500, 7000, 7500 };
 		JButton bt[] = new JButton[menu.length];
@@ -138,8 +138,11 @@ public class Bap {
 		//버튼 이벤트 생성
 		//주문하기 버튼 
 		bt1.addActionListener(new ActionListener() {
+			
+				
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				
 				JOptionPane.showMessageDialog(null, ta.getText() + "\n" +"주문되었습니다.");
 				for (int i = 0; i < menu.length; i++) {
 					bt[i].setEnabled(true);
@@ -148,6 +151,7 @@ public class Bap {
 					suja[i].setText("0");
 				}
 			}	
+			
 		});
 
 
